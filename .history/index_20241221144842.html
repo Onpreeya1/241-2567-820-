@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  มีไว้ให้เดฟอ่าน 1 แต่งใคร  id ,class ,dom 2แต่งอะไร*/
+        body {
+            font-family: "kanit";
+            src: url('Kanit (1)/Kanit-Regular.ttf');
+        }
+
+        #register {
+            font-size: 24px;
+            color: blue;
+            font-weight: 800;
+            padding-top: 10px;
+            margin-bottom: 10px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        .feom {
+           display: block;
+        }
+        .gender {
+            display:inline-block;
+            height: 50px;
+            flex-direction: row-reverse;
+        } 
+        .relative {
+            position: relative;
+            bottom: 20px;
+        }
+        .a
+    </style>
+</head>
+
+<body>
+    <div class="Containear">
+        <div class=" static">static</div>
+        <div class=" relative">relative</div>
+        <div class=" absolute">absolute</div>
+        <div class=" fixed">fixed</div>
+        <div class=" sticky">sticky</div>
+    </div>
+    <!-- from -->
+    <h1 id="register"> Register From</h1>
+    <span class="header-from"> ชื่อ </span>
+    <input type="text">
+    นามสกุล
+    <input type="text"> <br>
+    อายุ
+    <input type="number" min=" 0" max="100">
+    <div>
+        เพศ
+        <div class="gender">
+            <input name="grnder" type="radio"> ชาย
+        </div>
+        <div class="gender">
+            <input name="grnder" type="radio"> หญิง
+        </div>
+        <div class="gender">
+            <input name="grnder" type="radio"> ไม่ระบุ
+        </div>
+        <div class="gender">
+            <input name="grnder" type="radio"> อื่นๆ
+        </div>
+        <div>
+            งานอดิเรก
+            <div>
+                <input name="hobby" type="checkbox"> อ่านหนังสือ
+            </div>
+            <div>
+                <input name="hobby" type="checkbox"> ดูหนัง
+            </div>
+            <div>
+                <input name="hobby" type="checkbox"> ฟังเพลง
+            </div>
+        </div>
+        <div>
+            คำอธิบาย
+            <textarea></textarea>
+        </div>
+        <button>ส่งข้อมูล</button>
+</body>
+
+</html>
