@@ -6,11 +6,11 @@ function submitData(){
     let interestsDOMs = document.querySelectorAll('input[name=interest]:checked')
     let descriptionDOM = document.querySelector('textarea[name=description]')
     
-    let interests=''
-    for(let i=0;i<interestsDOMs.length;i++){
-        interests+=interestsDOMs[i].value
-        if(i != interestsDOMs.length -1){
-            interests+=','
+    let interests='';
+    for(let i=0; i < interestsDOMs.length;i++){
+        interests +=interestsDOMs[i].value
+        if(i != interestsDOMs.length-1){
+            interests+=',';
         }
     }
 
